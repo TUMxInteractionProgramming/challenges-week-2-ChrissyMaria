@@ -1,0 +1,123 @@
+/* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
+
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
+
+        /* ################################# GLOBAL ################################# */
+        * {
+            /* #2 #font #faces */
+            font-family: 'Roboto','Arial', sans-serif;
+            /* removing ugly spaces */
+            margin: 0px;
+            padding: 0px; 
+        }
+        body {
+            /* #2 #colorful #background */
+            background-color: #F5F5F5;
+        }
+        button, strong {
+            /* #2 #font capital #letters */
+            text-transform: uppercase;
+        }
+        .selected {
+            /* highlight font color of current selection */
+            color: #3F51B5;
+        }
+
+        /* ################################# APP BAR ################################# */
+        .app-bar {
+            /* #2 #colourful #app-bar */
+            background-color: #3F51B5;
+            color: white;
+        }
+
+        /* ################################# CHANNELS LIST ################################# */
+        ul li{
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+            list-style-type: none;
+            padding: 16px;
+            font-size: 16px;
+            box-sizing: border-box;
+            height: 48px;
+            /* border-bottom so that borders do not overlap*/
+            border-bottom: 1px solid #F5F5F5;
+        }
+        li img {
+            /* to center the icons vertically */
+           vertical-align: middle;
+        }
+        li.selected {
+            /* left border for current channel*/
+            border-left: 4px solid #3F51B5;
+        }
+
+        /* ################################# TAB BAR ################################# */
+        #tab-bar {
+            /*overall tab bar*/
+            background-color: white; 
+            width: 100%;
+        }
+        #tab-bar button {
+            /* whole button inside tab bar */
+            text-align: center;
+            background-color: white;
+            border: none; 
+            font-size: 13px;
+            width: 33%;
+            height: 72px;
+            padding: 16px;
+        }
+        #tab-bar img{
+            /* icons inside the buttons: block, center and spacing */
+            display: block;
+            margin: auto; 
+            margin-bottom: 4px;
+        }
+        #tab-bar button.selected {
+            /*highlight current button */
+            border-bottom: 4px solid #3F51B5;
+        }
+
+        /* ################################# MESSAGES ################################# */
+        .messages{
+             /* #message container*/
+            width: 80%;
+            margin-bottom: 8px;
+            margin-left: 2.5%;
+        }
+        .messages.own{
+            /* own messages are further right*/
+            margin-left: 17.5%;
+        }
+        .messages h3, .messages h3 a{
+             /* font #metadata is now medium */
+            font-size: medium;
+            color: black;
+        }   
+        .messages p {
+            /* #message text */
+            background-color: white;
+            padding: 16px;
+        }
+        .messages button {
+            /* #message button: #colourful #plusfive */
+            background-color: #CDDC39;
+            color: black;
+            /* note: uppercase is already specified in GLOBAl*/
+        }
+        .messages em{
+             /* #message emphasised information */
+             font-size: larger;
+             font-style: normal;
+        }
+       
+
+
+
+        
